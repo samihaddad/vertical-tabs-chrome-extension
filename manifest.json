@@ -1,0 +1,33 @@
+{
+   "author": "Adrian Lungu",
+   "background": {
+      "persistent": false,
+      "scripts": [ "app/chrome/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "assets/icons/19.png",
+         "38": "assets/icons/38.png"
+      },
+      "default_title": "Chrome Side Tabs"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "The sleekest vertical tabs extension for Chrome",
+   "icons": {
+      "128": "assets/icons/128.png",
+      "16": "assets/icons/16.png",
+      "48": "assets/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtxdiezMG1BsWYjkiSG0b/TfkUR7ttiJg8mIEvPZ+UoyfHyy/4ilBbrK6UVsF29++/TioDL+f5xfonlGGAXyY57e+zDGnedTyI5PHIZy7qZ2WGr4aPUwSl5bXoDfFlhYhxhmMBGf5f5O6rbsuF91pW22Np6Sb0Q3x4vw1dRLpAManA00pZipOfwHj/MMQVuUbK61/dh79D5JUd3n9EhKxDNHAYU7aXlHSDy1prllL3MzU+Hw5G7PFBim0XBDwy+pWMoyWdkbMnDBzj3bzsXKFELJYrbnDzAgZVbmaMTBgdTZG0NA2Vkc3CLHRAHsUpaWDw3XmHLCbP3YsDiGQKZbMKQIDAQAB",
+   "manifest_version": 2,
+   "name": "Chrome Side Tabs",
+   "options_page": "app/chrome/options/options.html",
+   "options_ui": {
+      "chrome_style": false,
+      "page": "app/chrome/options/options.html"
+   },
+   "permissions": [ "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.3",
+   "web_accessible_resources": [ "app/index.html", "app/core/directives/tab/tab.html", "assets/images/*" ]
+}
