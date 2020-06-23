@@ -15,10 +15,10 @@ body {
 
 #top {
   /*
-  z-index: 10;
-  display: block;
-  height: auto;
-  */
+    z-index: 10;
+    display: block;
+    height: auto;
+    */
   flex: 0; }
   #top .left {
     float: left; }
@@ -69,7 +69,8 @@ body {
     flex: 1;
     margin: 5px;
     overflow: hidden;
-    border: 1px solid darkgray;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 5px;
     box-sizing: border-box;
     z-index: 1;
@@ -102,7 +103,6 @@ body {
       display: block; }
     .tab-wrapper .tab.highlighted {
       border-radius: 5px;
-      background: whitesmoke;
       z-index: 2; }
     .tab-wrapper .tab .title {
       height: 100%;

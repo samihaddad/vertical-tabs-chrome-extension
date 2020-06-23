@@ -41,6 +41,7 @@
 
     var version = document.querySelector('#version');
     var save = document.querySelector('#save');
+    var reset = document.querySelector('#reset');
 
     var tabFunctions = {
         mouseEnter: function () {
@@ -56,10 +57,13 @@
         }
     };
 
+    function resetOptions() {
+      chrome.storage.sync.remove(['tab', 'optionsSettings']);
+      init();
+    }
+  
     function saveOptions() {
-
         chrome.storage.sync.set({
-
                 tab: JSON.stringify({
                     height: parseInt(tabSettings.height.value),
                     fontSize: parseInt(tabSettings.fontSize.value),
@@ -97,10 +101,8 @@
         )
     }
 
-    function getUserDefinedSettings() {
-
+    function getUserDefinedSettings() {      
         chrome.storage.sync.get(['tab', 'optionsSettings'], function (items) {
-
             if (!items.tab) {
                 items.tab = {
                     height: 25,
@@ -179,6 +181,7 @@
         version.innerHTML = 'Version ' + chrome.runtime.getManifest().version;
 
         save.addEventListener("click", saveOptions);
+        reset.addEventListener("click", resetOptions);
 
         tabSettings.height.addEventListener("input", setTabStyle);
         tabSettings.fontSize.addEventListener("input", setTabStyle);

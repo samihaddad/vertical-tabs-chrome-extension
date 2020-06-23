@@ -119,7 +119,8 @@ body {
         margin: $tab-margin;
         overflow: hidden;
 
-        border: 1px solid darkgray;
+        border-width: 1px;
+        border-style: solid;
         border-radius: 5px;
 
         box-sizing: border-box;
@@ -170,7 +171,6 @@ body {
 
         &.highlighted {
             border-radius: 5px;
-            background: whitesmoke;
             z-index: 2;
         }
 

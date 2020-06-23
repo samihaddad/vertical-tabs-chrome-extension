@@ -1,12 +1,12 @@
 {
-  "name": "chrome side tabs",
-  "description": "Chrome Side Tabs extension",
+  "name": "vertical-tabs",
+  "description": "Chrome Vertical Tabs Extension",
   "main": "app/index.html",
   "authors": [
-    "Adrian Lungu <contact@adrianlungu.com>"
+    "Sami Haddad <admin@samihaddad.dev>"
   ],
   "license": "ISC",
-  "homepage": "http://www.adrianlungu.com",
+  "homepage": "https://samihaddad.dev",
   "private": true,
   "ignore": [
     "**/.*",
