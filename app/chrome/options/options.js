@@ -178,7 +178,7 @@
 
         getUserDefinedSettings();
 
-        version.innerHTML = 'Version ' + chrome.runtime.getManifest().version;
+        //version.innerHTML = 'Version ' + chrome.runtime.getManifest().version;
 
         save.addEventListener("click", saveOptions);
         reset.addEventListener("click", resetOptions);
