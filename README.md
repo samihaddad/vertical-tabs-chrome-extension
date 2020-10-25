@@ -6,7 +6,7 @@
 - Customize tab view
 - Dark theme support
 
-Originally **chrome side tabs** by **Adrian Lungu** but it's not in the chrome store anymore.
-I'm working on some bug fixes and feature updates.
+Originally chrome side tabs by Adrian Lungu but it's not in the chrome store anymore.
+Currently working on bug fixes and feature updates.
 
 
