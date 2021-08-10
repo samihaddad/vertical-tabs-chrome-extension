@@ -2,7 +2,7 @@
   "author": "Sami Haddad",
   "name": "Vertical Tabs",
   "description": "Vertical tabs extension for Chrome",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "background": {
     "persistent": false,
     "scripts": [
