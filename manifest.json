@@ -1,32 +1,40 @@
 {
-   "author": "Sami Haddad",
-   "name": "Vertical Tabs",
-   "description": "Vertical tabs extension for Chrome",
-   "version": "1.0.2",
-   "background": {
-      "persistent": false,
-      "scripts": [ "app/chrome/background.js" ]
-   },
-   "browser_action": {
-      "default_icon": {
-         "19": "assets/icons/19.png",
-         "38": "assets/icons/38.png"
-      },
-      "default_title": "Vertical Tabs"
-   },
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-   "icons": {
-      "16": "assets/icons/16.png",
-      "48": "assets/icons/48.png",
-      "128": "assets/icons/128.png"
-   },
-   "manifest_version": 2,
-   "options_page": "app/chrome/options/options.html",
-   "options_ui": {
-      "chrome_style": false,
-      "page": "app/chrome/options/options.html"
-   },
-   "permissions": [ "tabs", "storage" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "web_accessible_resources": [ "app/index.html", "app/core/directives/tab/tab.html", "assets/images/*" ]
+  "author": "Sami Haddad",
+  "name": "Vertical Tabs",
+  "description": "Vertical tabs extension for Chrome",
+  "version": "1.0.2",
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "app/chrome/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "assets/icons/19.png",
+      "38": "assets/icons/38.png"
+    },
+    "default_title": "Vertical Tabs"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "16": "assets/icons/16.png",
+    "48": "assets/icons/48.png",
+    "128": "assets/icons/128.png"
+  },
+  "manifest_version": 2,
+  "options_page": "app/chrome/options/options.html",
+  "options_ui": {
+    "chrome_style": false,
+    "page": "app/chrome/options/options.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "web_accessible_resources": [
+    "app/index.html",
+    "app/core/directives/tab/tab.html",
+    "assets/images/*"
+  ]
 }
